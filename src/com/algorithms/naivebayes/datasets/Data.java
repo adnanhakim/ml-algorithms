@@ -15,7 +15,7 @@ public class Data {
             { "sunny", "mild", "normal", "true", "P" }, { "overcast", "mild", "high", "true", "P" },
             { "overcast", "hot", "normal", "false", "P" }, { "rain", "mild", "high", "true", "N" } };
 
-    static String[][] TAN = { { "name", "hair", "height", "weight", "dublin", "result" },
+    public static String[][] TAN = { { "name", "hair", "height", "weight", "dublin", "result" },
             { "Sarah", "blonde", "average", "light", "no", "sunburned" },
             { "Dana", "blonde", "tall", "average", "yes", "none" },
             { "Alex", "brown", "short", "average", "yes", "none" },
@@ -24,14 +24,14 @@ public class Data {
             { "Pete", "brown", "tall", "heavy", "no", "none" }, { "John", "brown", "average", "heavy", "no", "none" },
             { "Katie", "brown", "short", "light", "yes", "none" }, };
 
-    static String[][] CAR = { { "color", "type", "origin", "stolen" }, { "red", "sports", "domestic", "yes" },
+    public static String[][] CAR = { { "color", "type", "origin", "stolen" }, { "red", "sports", "domestic", "yes" },
             { "red", "sports", "domestic", "no" }, { "red", "sports", "domestic", "yes" },
             { "yellow", "sports", "domestic", "no" }, { "yellow", "sports", "imported", "yes" },
             { "yellow", "suv", "imported", "no" }, { "yellow", "suv", "imported", "yes" },
             { "yellow", "suv", "domestic", "no" }, { "red", "suv", "imported", "no" },
             { "red", "sports", "imported", "yes" }, };
 
-    static String[][] INCOME = { { "age", "income", "student", "credit_rating", "buys_computer" },
+    public static String[][] INCOME = { { "age", "income", "student", "credit_rating", "buys_computer" },
             { "<=30", "high", "no", "fair", "no" }, { "<=30", "high", "no", "excellent", "no" },
             { "31...40", "high", "no", "fair", "yes" }, { ">40", "medium", "no", "fair", "yes" },
             { ">40", "low", "yes", "fair", "yes" }, { ">40", "low", "yes", "excellent", "no" },

@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 import com.algorithms.naivebayes.datasets.Data;
 
-public class Weather {
+public class NaiveBayes {
     public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);
@@ -31,7 +31,7 @@ public class Weather {
         }
 
         ArrayList<Double> finalResults = new ArrayList<Double>();
-        ArrayList<String> outputs = getListofOutput(getDataByColumn(data, 4));
+        ArrayList<String> outputs = getListofOutput(getDataByColumn(data, maps.size() - 1));
         for (String result : outputs) {
 
             ArrayList<Double> tempResults = new ArrayList<Double>();
@@ -40,13 +40,13 @@ public class Weather {
                 double resultValue = 0;
 
                 for (int j = 1; j < data.length; j++) {
-                    if (data[j][i].equals(values.get(headers[i])) && data[j][4].equals(result)) {
+                    if (data[j][i].equals(values.get(headers[i])) && data[j][maps.size() - 1].equals(result)) {
                         resultValue++;
                     }
                 }
-                resultValue = resultValue / maps.get(maps.size() - 1).get(result);
+                resultValue = resultValue / maps.get(i).get(values.get(headers[i]));
                 double probValue = maps.get(i).get(values.get(headers[i])) / total;
-                double probResult = maps.get(4).get(result) / total;
+                double probResult = maps.get(maps.size() - 1).get(result) / total;
                 valueResult = (resultValue * probValue) / probResult;
                 tempResults.add(valueResult);
             }
@@ -55,14 +55,13 @@ public class Weather {
             for (double resultValue : tempResults) {
                 mul = mul * resultValue;
             }
-            finalResults.add(mul);
+            finalResults.add(mul * (maps.get(maps.size() - 1).get(result) / total));
         }
 
         double max = Integer.MIN_VALUE;
         int index = Integer.MIN_VALUE;
         for (int i = 0; i < finalResults.size(); i++) {
             double result = finalResults.get(i);
-            System.out.println(result);
             if (result > max) {
                 max = result;
                 index = i;
@@ -72,6 +71,7 @@ public class Weather {
         if (index != Integer.MIN_VALUE) {
             System.out.println("Final Answer is: " + outputs.get(index));
         }
+        return;
     }
 
     public static String[] getDataByColumn(String[][] data, int column) {
