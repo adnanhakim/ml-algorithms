@@ -15,4 +15,25 @@ class FeatureValue {
     public int getOccurences() {
         return occurences;
     }
+
+    public int hashCode() {
+        return name.hashCode();
+    }
+
+    public boolean equals(Object object) {
+        boolean returnValue = true;
+        if (object == null || (getClass() != object.getClass())) {
+            returnValue = false;
+        }
+        if (name == null)
+            if (((FeatureValue) object).name != null)
+                returnValue = false;
+            else if (!name.equals(((FeatureValue) object).name))
+                returnValue = false;
+        return returnValue;
+    }
+
+    public String toString() {
+        return name;
+    }
 }
