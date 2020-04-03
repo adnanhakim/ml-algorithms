@@ -26,4 +26,13 @@ public class Data {
                         { "yellow", "sports", "imported", "yes" }, { "yellow", "suv", "imported", "no" },
                         { "yellow", "suv", "imported", "yes" }, { "yellow", "suv", "domestic", "no" },
                         { "red", "suv", "imported", "no" }, { "red", "sports", "imported", "yes" }, };
+
+        static String[][] INCOME = { { "<=30", "high", "no", "fair", "no" },
+                        { "<=30", "high", "no", "excellent", "no" }, { "31...40", "high", "no", "fair", "no" },
+                        { ">40", "medium", "no", "fair", "no" }, { ">40", "low", "yes", "fair", "no" },
+                        { ">40", "low", "yes", "excellent", "no" }, { "31...40", "low", "yes", "excellent", "no" },
+                        { "<=30", "medium", "no", "fair", "no" }, { "<=30", "low", "yes", "fair", "no" },
+                        { ">40", "medium", "yes", "fair", "no" }, { "<=30", "medium", "yes", "excellent", "no" },
+                        { "31...40", "medium", "no", "excellent", "no" }, { "31...40", "high", "yes", "fair", "no" },
+                        { ">40", "medium", "no", "excellent", "no" }, };
 }
