@@ -12,7 +12,7 @@ class FeatureValue {
         return name;
     }
 
-    public String getOccurences() {
+    public int getOccurences() {
         return occurences;
     }
 }
