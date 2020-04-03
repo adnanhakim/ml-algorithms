@@ -11,7 +11,12 @@ public class NaiveBayes {
 
         Scanner scanner = new Scanner(System.in);
 
+        // Select your dataset
         String[][] data = Data.WEATHER;
+        // String[][] data = Data.CAR;
+        // String[][] data = Data.TAN;
+        // String[][] data = Data.INCOME;
+
         double total = data.length - 1;
 
         String[] headers = data[0];
@@ -23,6 +28,7 @@ public class NaiveBayes {
 
         HashMap<String, String> values = new HashMap<String, String>();
 
+        // Start i from 1 if Data.TAN
         for (int i = 0; i < headers.length - 1; i++) {
             String header = headers[i];
             System.out.println("Enter value for " + header);
@@ -35,6 +41,7 @@ public class NaiveBayes {
         for (String result : outputs) {
 
             ArrayList<Double> tempResults = new ArrayList<Double>();
+            // Start i from 1 if Data.TAN
             for (int i = 0; i < maps.size() - 1; i++) {
                 double valueResult = 0;
                 double resultValue = 0;
@@ -71,6 +78,8 @@ public class NaiveBayes {
         if (index != Integer.MIN_VALUE) {
             System.out.println("Final Answer is: " + outputs.get(index));
         }
+
+        scanner.close();
         return;
     }
 
