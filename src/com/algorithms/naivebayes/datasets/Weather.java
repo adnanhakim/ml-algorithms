@@ -1,4 +1,4 @@
-package com.algorithms.naivebayes;
+package com.algorithms.naivebayes.datasets;
 
-public class Dataset {
+public class Weather {
 }
