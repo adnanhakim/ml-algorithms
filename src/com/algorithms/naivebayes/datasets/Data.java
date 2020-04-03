@@ -24,11 +24,18 @@ public class Data {
             { "Pete", "brown", "tall", "heavy", "no", "none" }, { "John", "brown", "average", "heavy", "no", "none" },
             { "Katie", "brown", "short", "light", "yes", "none" }, };
 
+    static String[][] CAR = { { "red", "sports", "domestic", "yes" }, { "red", "sports", "domestic", "no" },
+            { "red", "sports", "domestic", "yes" }, { "yellow", "sports", "domestic", "no" },
+            { "yellow", "sports", "imported", "yes" }, { "yellow", "suv", "imported", "no" },
+            { "yellow", "suv", "imported", "yes" }, { "yellow", "suv", "domestic", "no" },
+            { "red", "suv", "imported", "no" }, { "red", "sports", "imported", "yes" }, };
+
     static Map<String, String[][]> datas = Collections.unmodifiableMap(new HashMap<String, String[][]>() {
         private static final long serialVersionUID = 1L;
         {
             put("WEATHER", WEATHER);
             put("TAN", TAN);
+            put("CAR", CAR);
         }
     });
 }
