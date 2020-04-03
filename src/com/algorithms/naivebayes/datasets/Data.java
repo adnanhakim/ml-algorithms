@@ -46,6 +46,7 @@ public class Data {
                         put("WEATHER", WEATHER);
                         put("TAN", TAN);
                         put("CAR", CAR);
+                        put("INCOME", INCOME);
                 }
         });
 }
