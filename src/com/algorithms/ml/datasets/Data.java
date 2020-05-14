@@ -1,4 +1,4 @@
-package com.algorithms.naivebayes.datasets;
+package com.algorithms.ml.datasets;
 
 public class Data {
 

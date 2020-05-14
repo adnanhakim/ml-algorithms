@@ -1,10 +1,10 @@
-package com.algorithms.naivebayes;
+package com.algorithms.ml;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Scanner;
 
-import com.algorithms.naivebayes.datasets.Data;
+import com.algorithms.ml.datasets.Data;
 
 public class NaiveBayes {
     public static void main(String[] args) {

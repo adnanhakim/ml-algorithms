@@ -1,4 +1,4 @@
-package com.algorithms.naivebayes;
+package com.algorithms.ml;
 
 import java.util.Scanner;
 

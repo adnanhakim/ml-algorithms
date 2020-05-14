@@ -1,4 +1,4 @@
-package com.algorithms.naivebayes;
+package com.algorithms.ml;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -18,11 +18,10 @@ public class KMedoids {
         }
 
         public static void printCluster(int clusterNo, Point clusterHead, List<Point> cluster) {
-            System.out.println("Cluster Head " + clusterNo + ": (" + clusterHead.x + ", " + clusterHead.y + ")");
+            System.out.println(String.format("Cluster Head %d: (%d, %d)", clusterNo, clusterHead.x, clusterHead.y));
             System.out.println("Cluster " + clusterNo + ": ");
-            for (Point point : cluster) {
-                System.out.print("(" + point.x + ", " + point.y + ") ");
-            }
+            for (Point point : cluster)
+                System.out.print(String.format("(%d, %d) ", point.x, point.y));
             System.out.println();
         }
     }
