@@ -1,16 +1,22 @@
-# Naive-Bayes using Java
+# Machine Learning Algorithms using Java
 
 ## About
 
-A fun side program to perform naive-bayes algorithm using plain java code.
+A fun side program to perform machine learning algorithm using plain java code.
 
-This code is dynamic for different datasets as long as all columns in the dataset are used and the last column is the result.
+The Naive Bayes code is dynamic for different datasets as long as all columns in the dataset are used and the last column is the result.
 
 **Note:** For datasets not involving the first or first few columns such as the 3rd dataset example, change the iterations as commented in the code.
 
 ## Technology Stack
 
 1. Developed using plain Java
+
+## Algorithms
+
+1. Naive Bayes (using dynamic datasets)
+1. Linear Regression (using static dataset)
+1. K-Medoids Clustering (using static dataset)
 
 ## Developer
 
@@ -20,7 +26,7 @@ This code is dynamic for different datasets as long as all columns in the datase
 
 -  Change the dataset as required
 
-## Datasets
+## Datasets (Naive Bayes)
 
 ### Dataset 1 - To predict if certain weather occurs
 
